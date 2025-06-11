@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kerri</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+  <!-- start of nav sec -->
+  <section >
+<div class="container bg-info py-4 text-white ">
+  <h1 class="text-center">CURD SYSTEM</h1>
+
+<div class="form-floating mb-3">
+  <input type="text" class="form-control" id="ProductName" placeholder="">
+  <label for="ProductName">Product Name</label>
+</div>
+
+<div class="form-floating mb-3">
+  <input type="number" class="form-control" id="ProductPrice" placeholder="">
+  <label for="ProductPrice">Product Price</label>
+</div>
+
+
+<div class="form-floating mb-3">
+  <input list="list" type="text" class="form-control" id="ProductCatagory" placeholder="">
+  <label for="ProductCatagory">Product Catagory</label>
+  <datalist  id="list" name="ProductCatagory"> 
+    <option value="Electronics"/>
+    <option value="Clothing"/>
+    <option value="Books"/>
+  </datalist>
+</div>
+
+<div class="form-floating mb-3">
+<textarea class="form-control" style="height: 100px;" name="floatingInput" id="ProductDescribation"></textarea> 
+ <label for="ProductDescribation">Product Describation</label>
+</div>
+
+
+<div class="form-floating mb-3">
+  <input type="file" class="form-control" id="ProductImage" placeholder="">
+  <label for="ProductImage"> Product Image</label>
+</div>
+<button class="btn btn-primary py-3"> add product</button>
+</div>
+
+
+  </section>
+
+<section>
+  <div class="container-fluid">
+  <input type="search" class="form-control my-4 w-50 mx-auto" id="ProductSearch" placeholder="search by name">
+<div class="col-md-3 py-4">
+<div class="card">
+      <img src="images/1.jpg" class="card-img-top" alt="bg-missing" />
+      <div class="card-body text-center"> 
+        <span>index</span>
+        <h3 class="card-title">Product Name</h3>
+        <p class="card-text">
+          Product Price
+        </p>
+        <p class="card-text">
+         Product Catagory
+        </p>
+        <p class="card-text">
+         product describation
+        </p>
+      </div>
+      <div class="card-footer text-center">
+        <button class="btn btn-outline-danger btn-sm">update</button>
+        <button class="btn btn-outline-warning btn-sm">delete</button>
+      </div>
+    </div>
+</div>
+</div>
+
+
+    </div>
+</section>
+
+
+
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
